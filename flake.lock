@@ -109,11 +109,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1639549182,
-        "narHash": "sha256-Jf3RJZqsP+lHhsp5pZNCe5Asqu9Os9963wad2KmG5GI=",
+        "lastModified": 1639574235,
+        "narHash": "sha256-sLz+1DlLdLSMf1gZGU8XoajJLHtvEvJ5C9nvhInmqac=",
         "owner": "m15a",
         "repo": "nixpkgs-vim-plugins",
-        "rev": "9d8428b45d23943e835abd0d33084ea77534ec49",
+        "rev": "35c1634f2295602aa4641456858dea75162ec1e4",
         "type": "github"
       },
       "original": {
