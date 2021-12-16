@@ -1,6 +1,6 @@
 final: prev:
 
-final.lib.composeManyExtensions [
+prev.lib.composeManyExtensions [
   (import ./ext/nixpkgs-vim-plugins/overlay.nix)
 ]
 final prev
