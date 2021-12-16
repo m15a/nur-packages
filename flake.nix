@@ -4,15 +4,11 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    flake-compat = { url = "github:edolstra/flake-compat"; flake = false; };
-    vim-plugins.url = "github:m15a/nixpkgs-vim-plugins";
   };
 
-  outputs = { self, nixpkgs, flake-utils, vim-plugins, ... }:
+  outputs = { self, nixpkgs, flake-utils, ... }:
   {
-    overlay = nixpkgs.lib.composeManyExtensions [
-      vim-plugins.overlay
-    ];
+    overlay = import ./overlay.nix;
   } // (flake-utils.lib.eachDefaultSystem (system:
   let
     pkgs = import nixpkgs {
